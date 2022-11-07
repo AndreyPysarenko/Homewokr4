@@ -330,6 +330,7 @@ border-radius: 4px;
 .skills-name {
   margin-bottom: 10px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -379,7 +380,7 @@ gap: 30px;
 
 .teams {
   background-color: var(--teams-bg-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .teams-list {
@@ -419,8 +420,7 @@ border-radius: 0px 0px 4px 4px;
 
 .teams-content {
   padding-top: 30px;
-  margin-bottom: 16px;
-  /* padding-bottom: 30px; */
+  padding-bottom: 30px;
   /* background-color: var(--primary-bg-color); */
 /* border-radius: 0px 0px 4px 4px; */
 }
@@ -433,6 +433,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .teams-members .position-members {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   color: var(--secondarytext-color);
@@ -441,8 +442,6 @@ border-radius: 0px 0px 4px 4px;
 .teams-list .social-icons {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
-  /* margin-top: 16px; */
 }
 
 .teams-list .social-item {
@@ -540,6 +539,7 @@ border-radius: 4px;
   display: flex;
   flex-wrap: wrap;
     gap: 70px;
+    align-items: baseline;
 }
 
 .footer-logo {
@@ -594,7 +594,6 @@ border-radius: 4px;
 
 
 .join-title {
-  margin-top: 12px;
   margin-bottom: 20px;
   font-weight: 700;
 font-size: 14px;
@@ -640,13 +639,7 @@ color: var(--title-text-color);
   fill: currentColor;
 }
 
-
-
-
-
-
 /* <portfolio> */
-
 
 .applications {
     margin-bottom: 50px;
@@ -693,16 +686,21 @@ margin-left: 8px;
     flex-basis: calc((100% - 60px) / 3);
     /* margin-right: 30px;
     margin-bottom: 30px; */
-    border: 1px solid #EEEEEE;
+   
 }
 
-.about .item:hover,
-.about .item:focus {
+.item-link {
+  display: block;
+}
+
+.about .item-link:hover,
+.about .item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .item-content {
     padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 
 .about-description {
